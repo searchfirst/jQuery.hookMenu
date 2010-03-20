@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="charset=utf-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="./jquery.hookMenu.js"></script>
+<script>
+$(document).ready(function(){
+	$('h2').hookMenu();
+	
+});
+</script>
+<style>
+h2 {
+margin-bottom: 0;
+}
+
+ul.hook_menu {
+margin: 0;
+border: solid 1px black;
+list-style: none inside;
+background-color: rgb(255,255,255);
+padding: 3px 0;
+color: rgb(51,51,51);
+-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+border: solid 1px rgb(191,191,191);
+-moz-border-radius: 5px 5px;
+-webkit-border-radius: 5px 5px;	
+}
+
+
+ul.hook_menu li {
+display: block;
+}
+
+ul.hook_menu a {
+padding: 3px 6px;
+display: block;
+text-decoration: none;
+}
+
+ul.hook_menu li a:hover {
+background-color: rgb(51,130,245);
+background: -moz-linear-gradient(top,rgb(51,130,245),rgb(41,107,204));
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(51,130,245)), to(rgb(41,107,204)));
+color: rgb(255,255,255);
+}
+
+.hook_menu_xc {
+height: 100%;
+display: inline-block;
+}
+
+.hook_menu_x {
+display: inline-block;
+width: 7px;
+line-height: 100%;
+text-indent: -1000px;
+padding: 0 6px;
+background: url('arrow-down.png') no-repeat center center;
+opacity: 0.5;
+border-left: solid 1px rgb(191,191,191);
+margin-left: 6px;
+}
+
+.hook_menu_x:hover {
+opacity: 1;
+}
+
+.hook_highlight {
+-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+</style>
+<title>jQuery.hookMenu Demo</title>
+</head>
+<body>
+<h1>jQuery.hookMenu Demo</h1>
+<h2>Heading</h2>
+<ul class="hook_menu">
+<li><a href="#">Menu Item 1</a></li>
+<li><a href="#">Menu Item 2</a></li>
+<li><a href="#">Menu Item 3</a></li>
+<li><a href="#">Menu Item 4</a></li>
+</ul>
+</body>
+</html>
